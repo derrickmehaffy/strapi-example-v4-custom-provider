@@ -1,0 +1,29 @@
+{
+  "name": "strapi-provider-upload-aws-s3-custom",
+  "version": "4.11.7",
+  "description": "Custom AWS S3 provider for strapi upload",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "build:ts": "npx tsc",
+    "watch": "npx tsc -w --preserveWatchOutput",
+    "clean": "npx rimraf ./dist"
+  },
+  "dependencies": {
+    "aws-sdk": "2.1413.0",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.2",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
